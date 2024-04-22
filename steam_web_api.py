@@ -65,7 +65,7 @@ class SteamWebApi:
         inventory = response.json()
 
         return {
-            'worth': sum(float(item['priceAvg']) for item in inventory),
+            'worth': sum(float(item['priceavg']) for item in inventory),
             'inventory': inventory
         }
 
